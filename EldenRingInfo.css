@@ -153,8 +153,23 @@ body._touch .header_menu_list > li._active .menu_arrow {
     .poisk{
         margin-right: 5%;
     }
+    .osnova{
+        margin: 48px 0px;
+    }
     .iche a{
         font-size: 20px;
+    }
+    article{
+        width: 65%;
+    }
+    aside{
+        width: 28%;
+    }
+    .predlogenia{
+        margin-left: 2.5%;
+    }
+    .icons{
+        margin-left: 20px;
     }
 }
 @media (max-width: 768px) {
@@ -268,8 +283,17 @@ body._touch .header_menu_list > li._active .menu_arrow {
     .poisk{
         margin-right: 15%;
     }
+    .osnova{
+        margin: 48px 0px;
+    }
     .iche a{
         font-size: 15px;
+    }
+    article{
+        width: 65%;
+    }
+    aside{
+        width: 28%;
     }
 }
 @media (max-width: 426px){
@@ -280,8 +304,107 @@ body._touch .header_menu_list > li._active .menu_arrow {
         margin-right: 28%;
         width: 131px;
     }
+    .osnova{
+        margin: 50px 0 0 0;
+    }
     .iche a{
         font-size: 15px;
+    }
+    .text{
+        flex-direction: column-reverse;
+    }
+    aside {
+        width: 95%;
+        margin: auto;
+    }
+    article{
+        width: 95%;
+        margin: auto;
+    }
+    .predlogenia{
+        margin-left: 6.5%;
+    }
+    .up{
+        height: 30px;
+    }
+    .up a{
+        font-size: 19px;
+    }
+}
+@media (max-width: 376px){
+    .osnova{
+        margin: 50px 0 0 0;
+    }
+    .text{
+        flex-direction: column-reverse;
+    }
+    aside {
+        width: 95%;
+        margin: auto;
+    }
+    article{
+        width: 95%;
+        margin: auto;
+    }
+    .menu_icon{
+        left: 64%
+    }
+    .poisk{
+        margin-right: 32%;
+        width: 131px;
+    }
+    .predlogenia{
+        margin-left: 8.5%;
+    }
+    .icons{
+        margin-left: -10px;
+    }
+    .niz{
+        font-size: 13px;
+    }
+    .up{
+        height: 30px;
+    }
+    .up a{
+        font-size: 19px;
+    }
+}
+@media (max-width: 321px){
+    .osnova{
+        margin: 50px 0 0 0;
+    }
+    .text{
+        flex-direction: column-reverse;
+    }
+    aside {
+        width: 95%;
+        margin: auto;
+    }
+    article{
+        width: 95%;
+        margin: auto;
+    }
+    .menu_icon{
+        left: 70%
+    }
+    .poisk{
+        margin-right: 34%;
+        width: 131px;
+    }
+    .predlogenia{
+        margin-left: 8.5%;
+    }
+    .icons{
+        margin-left: -10px;
+    }
+    .niz{
+        font-size: 13px;
+    }
+    .up{
+        height: 30px;
+    }
+    .up a{
+        font-size: 19px;
     }
 }
 
@@ -308,7 +431,6 @@ main{
 .osnova{
     width: 90%;
     height: 100%;
-    margin: 50px 0px;
     background-color: rgb(2, 6, 5, 0.8);
     color: rgb(174, 172, 170);
     box-shadow: 0px -3px 5px rgba(0, 0, 0, 0.5);
@@ -333,9 +455,7 @@ main{
     justify-content: space-between;
 }
 
-article{
-    width: 65%;
-}
+
 
 article hr{
     height: 5px;
@@ -347,7 +467,6 @@ article hr{
     width: 95%;
     height: 20%;
     margin-top: 5%;
-    margin-left: 2.5%;
     display: flex;
     align-items: center;
 }
@@ -376,9 +495,6 @@ article hr{
     width: 100%;
 }
 
-aside{
-    width: 28%;
-}
 aside hr{
     height: 5px;
     background-color: white;
@@ -435,7 +551,6 @@ footer nav .niz{
 .icons{
     display: flex;
     justify-content: start;
-    margin-left: 20px;
 }
 .icon_masg{
     margin-left: 5px;
@@ -460,30 +575,86 @@ footer a{
 
 /* ----------------------- */
 
+#t{
+    display: grid;
+    grid-template-columns: 27.5% 63.5%;
+    gap: 7.5%;
+}
+.taside,
+.tarticle{
+    width: 100%;
+}
 .talismans-info{
     display: grid;
     grid-template-columns: 31.5% 68.5%;
     background-color: aquamarine;
     width: 100%;
-    height: 500px;
 }
 
+
 .container-image{
-    height: 400px;
+    height: 340px;
+    padding-right: 12%;
+    border-bottom: 2px solid #fff;
 }
 .picture{
     background-color: blueviolet;
     padding: 0px 0px 0px 12%;  
     height: 200px;
 }
+.picture img{
+    height: 100%;
+    width: 89%;
+    max-width: 200px;
+}
 .stats{
     background-color: coral;
     width: 100%;
-    height: 200px;
+    height: 140px;
+}
+.stats h2{
+    margin: 0 0 0 0;
+    color: rgb(233, 216, 176);
+    text-align: center;
+}
+.stats p {
+    color: rgb(233, 216, 176);
+    text-align: center;
+    margin: 5px 0 0px 0;
+}
+.stats hr{
+    margin: 0 0 2px 0;
+}
+.afect-ves{
+    height: 66px;
 }
 
 
 .container-info{
     background-color: chartreuse;
-    height: 400px;
+    height: 340px;
+    border-bottom: 3px solid #fff;
+    padding: 0 2% 0 7%;
+}
+.opis{
+    height: 176px;
+}
+.container-info h2{
+    margin: 0 0 0 0;
+    color: rgb(233, 216, 176);
+}
+.container-info p{
+    color: rgb(233, 216, 176);
+    margin: 6px 0 0px 0;
+    line-height: 22px;
+}
+.container-info hr{
+    margin: 0 0 2px 0;
+}
+
+@media(min-width: 321px){
+    
+}
+@media(max-width: 321px){
+    
 }
