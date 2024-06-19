@@ -16,7 +16,7 @@
                 <nav class="menu_body">
                     <ul class="header_menu_list">
                         <li><a href="EldenRingInfo.html" class="menu_link">Общая информация</a></li>
-                        <li><a href="EldenRingInfo-Talisman.html" class="menu_link">Талисманы</a></li>
+                        <li><a data-goto=".top" href="#" class="menu_link">Талисманы</a></li>
                         <li>
                             <a href="#" style="margin-right: 0px;" class="menu_link">Оружие</a>
                             <span class="menu_arrow"></span>
@@ -38,39 +38,136 @@
 
 
 
-    <main class="top">
+    <main class="top" id="tmain">
         <div class="osnova">
             <div class="nachalo_verh">
                 <div class="nachalo_verh left"></div>
                 <div class="nachalo_verh right"></div>
             </div>
-            <div class="text">
-                <aside>
-                    <h1 class="zaglav">МЕДИА</h1>
+            <div class="text" id="t">
+                <aside class="taside">
+                    <h1 class="zaglav">Характ.</h1>
                     <hr>
                 </aside>
 
-                <article>
-                    <h1 class="zaglav">Талисманы</h1>
+                <article class="tarticle">
+                    <h1 class="zaglav">Информация</h1>
                     <hr>
                 </article>
             </div>
             <div class="talismans-info">
                 <div class="container-image">
                     <div class="picture"><img src="talisman_crimson-amber-medallion.png"></div>
-                    <div class="stats"></div>
+                    <div class="stats">
+                        <hr>
+                        <div class="afect-ves">
+                            <h2>ЭФФЕКТ</h2>
+                            <p>Увеличивает максимум ОЗ</p>
+                        </div>
+                        <hr>
+                        <div class="afect-ves">
+                            <h2>ВЕС</h2>
+                            <p>0.3</p>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="container-info">
-                    <div class="description"></div>
+                    <div class="tname">
+                        <h2>ИМЯ:</h2>
+                        <p>Медальон с багровым янтарём</p>
+                    </div>
+                    <hr>
+                    <div class="opis">                      
+                        <h2>ОПИСАНИЕ:</h2>
+                        <p>Медальон, инкрустированный багровым янтарём. Увеличивает максимум ОЗ.<br>
+
+                        Твёрдая смола Древа Эрд превращается в янтарь, что высоко ценили во времена Годфри, первого повелителя Элдена.<br>
+                        
+                        Хранит первобытную энергию жизни.</p>
+                    </div>
+                    <hr>
+                    <div class="mesto">
+                        <h2>МЕСТОНАХОЖДЕНИЕ:</h2>
+                        <p>Можно выбрать в качестве начальной реликвии.<br>
+                            Продаёт Торговец-кочевник (Бастион замка Морн).</p>
+                    </div>
                 </div>
+
 
                 <div class="container-image">
                     <div class="picture"><img src="talisman_great-jars_arsenal.png"></div>
-                    <div class="stats"></div>
+                    <div class="stats">
+                        <hr>
+                        <div class="afect-ves">
+                            <h2>ЭФФЕКТ</h2>
+                            <p>Сильно повышает макс. вес снаряжения</p>
+                        </div>
+                        <hr>
+                        <div class="afect-ves">
+                            <h2>ВЕС</h2>
+                            <p>1.5</p>
+                        </div>
+                    </div>
                 </div>
 
-                <div class="container-info">4</div>
+                <div class="container-info">
+                    <div class="tname">
+                        <h2>ИМЯ:</h2>
+                        <p>Склад великого кувшина</p>
+                    </div>
+                    <hr>
+                    <div class="opis">                      
+                        <h2>ОПИСАНИЕ:</h2>
+                        <p>Амулет, напоминающий большой кувшин, набитый оружием.<br>
+
+                            Сильно увеличивает максимальный вес снаряжения.<br>
+                            
+                            Великий кувшин дарует этот талисман своим воинам. Чем тяжелее ноша, тем крепче мышцы.</p>
+                    </div>
+                    <hr>
+                    <div class="mesto">
+                        <h2>МЕСТОНАХОЖДЕНИЕ:</h2>
+                        <p>Звёздные пустоши. Награда за победу над тремя Рыцарями великого кувшина.</p>
+                    </div>
+                </div>
+
+                <div class="container-image">
+                    <div class="picture"><img src="talisman_viridian-amber-medallion.png"></div>
+                    <div class="stats">
+                        <hr>
+                        <div class="afect-ves">
+                            <h2>ЭФФЕКТ</h2>
+                            <p>Увеличивает максимум выносливости</p>
+                        </div>
+                        <hr>
+                        <div class="afect-ves">
+                            <h2>ВЕС</h2>
+                            <p>0.3</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container-info">
+                    <div class="tname">
+                        <h2>ИМЯ:</h2>
+                        <p>Медальон с зелёным янтарём</p>
+                    </div>
+                    <hr>
+                    <div class="opis">                      
+                        <h2>ОПИСАНИЕ:</h2>
+                        <p>Медальон, инкрустированный зелёным янтарём. Увеличивает максимальную выносливость.<br>
+
+                            Затвердевшая старая смола Древа Эрд превращается в янтарь, что высоко ценили во времена Годфри, первого повелителя Элдена.<br>
+                            
+                            Хранит первобытную энергию жизни.</p>
+                    </div>
+                    <hr>
+                    <div class="mesto">
+                        <h2>МЕСТОНАХОЖДЕНИЕ:</h2>
+                        <p>Ведущая к гробнице пещера. Награда за убийство босса Миранда Смертоцвет.</p>
+                    </div>
+                </div>
             </div>
         </div>
 
