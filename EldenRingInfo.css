@@ -296,6 +296,254 @@ body._touch .header_menu_list > li._active .menu_arrow {
         width: 28%;
     }
 }
+@media (max-width: 661px){
+    .menu_icon{
+        z-index: 5;
+        display: block;
+        position: relative;
+        width: 30px;
+        height: 18px;
+        cursor: pointer;
+        left: 40%;
+    }
+    .menu_icon span,
+    .menu_icon::before,
+    .menu_icon::after {
+        left: 0;
+        position: absolute;
+        height: 10%;
+        width: 100%;
+        transition: all 0.3s ease 0s;
+        background-color: rgb(233, 216, 176);
+    }
+    .menu_icon::before,
+    .menu_icon::after{
+        content: "";
+    }
+    .menu_icon::before{
+        top:0;
+    }
+    .menu_icon::after{
+        bottom: 0;
+    }
+    .menu_icon span{
+        top: 50%;
+        transform: scale(1) translate(0px, -50%);
+    }
+    .menu_icon._active span {
+        transform: scale(0) translate(0px, -50%);
+    }
+    .menu_icon._active::before {
+        top: 50%;
+        transform: rotate(-45deg) translate(0px, -50%);
+    }
+    .menu_icon._active::after {
+        bottom: 50%;
+        transform: rotate(45deg) translate(0px, 50%);
+    }
+    .menu_body{
+        position: fixed;
+        top:0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        left: -100%;
+        background-color: rgba(0, 0, 0, 0.9);
+        padding: 80px 0px 30px 0px;
+        transition: left 0.3s ease 0s;
+        overflow: auto;
+    }
+    .menu_body._active {
+        left: 0;
+    }
+    .menu_body::before {
+        content: "";
+        position: fixed;
+        width: 100%;
+        top: 0;
+        left: 0;
+        height: 70px;
+        background-color: rgb(20, 20, 20);
+        z-index: 2;
+    }
+    .zaglav{
+        font-size: 16px;
+        text-align: center;
+        margin-bottom: auto;
+        color: white;
+    }
+    .information{
+        margin: 30px 30px;
+        font-size: 12px;
+        color: rgb(233, 216, 176);
+        line-height: 18px;
+    }
+    .header_menu_list > li {
+        flex-wrap: wrap;
+        margin: 0px 0px 35px 0px;
+    }
+    .header_menu_list > li._active .header_menu_sub-list{
+        display: block;
+    }
+    .header_menu_list > li:last-child {
+        margin-bottom: 0;
+    }
+    .menu_link {
+        font-size: 24px;
+    } 
+    .header_menu_sub-list {
+        position: relative;
+        background-color: rgb(233, 216, 176);
+        flex: 1 1 100%;
+        margin: 25px 0 0 0;
+        display: none;
+    }
+    .menu_sub-link {
+        font-size: 20px;
+        color: #000;
+        text-decoration: none;
+        margin: 0 20px;
+    }
+    .poisk{
+        margin-right: 20%;
+    }
+    .osnova{
+        margin: 48px 0px;
+    }
+    .iche a{
+        font-size: 15px;
+    }
+    article{
+        width: 65%;
+    }
+    aside{
+        width: 28%;
+    }
+}
+@media (max-width: 551px){
+    .menu_icon{
+        z-index: 5;
+        display: block;
+        position: relative;
+        width: 30px;
+        height: 18px;
+        cursor: pointer;
+        left: 55%;
+    }
+    .menu_icon span,
+    .menu_icon::before,
+    .menu_icon::after {
+        left: 0;
+        position: absolute;
+        height: 10%;
+        width: 100%;
+        transition: all 0.3s ease 0s;
+        background-color: rgb(233, 216, 176);
+    }
+    .menu_icon::before,
+    .menu_icon::after{
+        content: "";
+    }
+    .menu_icon::before{
+        top:0;
+    }
+    .menu_icon::after{
+        bottom: 0;
+    }
+    .menu_icon span{
+        top: 50%;
+        transform: scale(1) translate(0px, -50%);
+    }
+    .menu_icon._active span {
+        transform: scale(0) translate(0px, -50%);
+    }
+    .menu_icon._active::before {
+        top: 50%;
+        transform: rotate(-45deg) translate(0px, -50%);
+    }
+    .menu_icon._active::after {
+        bottom: 50%;
+        transform: rotate(45deg) translate(0px, 50%);
+    }
+    .menu_body{
+        position: fixed;
+        top:0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        left: -100%;
+        background-color: rgba(0, 0, 0, 0.9);
+        padding: 80px 0px 30px 0px;
+        transition: left 0.3s ease 0s;
+        overflow: auto;
+    }
+    .menu_body._active {
+        left: 0;
+    }
+    .menu_body::before {
+        content: "";
+        position: fixed;
+        width: 100%;
+        top: 0;
+        left: 0;
+        height: 70px;
+        background-color: rgb(20, 20, 20);
+        z-index: 2;
+    }
+    .zaglav{
+        font-size: 16px;
+        text-align: center;
+        margin-bottom: auto;
+        color: white;
+    }
+    .information{
+        margin: 30px 30px;
+        font-size: 12px;
+        color: rgb(233, 216, 176);
+        line-height: 18px;
+    }
+    .header_menu_list > li {
+        flex-wrap: wrap;
+        margin: 0px 0px 35px 0px;
+    }
+    .header_menu_list > li._active .header_menu_sub-list{
+        display: block;
+    }
+    .header_menu_list > li:last-child {
+        margin-bottom: 0;
+    }
+    .menu_link {
+        font-size: 24px;
+    } 
+    .header_menu_sub-list {
+        position: relative;
+        background-color: rgb(233, 216, 176);
+        flex: 1 1 100%;
+        margin: 25px 0 0 0;
+        display: none;
+    }
+    .menu_sub-link {
+        font-size: 20px;
+        color: #000;
+        text-decoration: none;
+        margin: 0 20px;
+    }
+    .poisk{
+        margin-right: 25%;
+    }
+    .osnova{
+        margin: 48px 0px;
+    }
+    .iche a{
+        font-size: 15px;
+    }
+    article{
+        width: 65%;
+    }
+    aside{
+        width: 28%;
+    }
+}
 @media (max-width: 426px){
     .menu_icon{
         left: 58%
@@ -580,14 +828,15 @@ footer a{
     grid-template-columns: 27.5% 63.5%;
     gap: 7.5%;
 }
-.taside,
-.tarticle{
+.taside{
     width: 100%;
+}
+.tarticle{
+    width: 100% ;
 }
 .talismans-info{
     display: grid;
     grid-template-columns: 31.5% 68.5%;
-    background-color: aquamarine;
     width: 100%;
 }
 
@@ -595,22 +844,16 @@ footer a{
 .container-image{
     height: 340px;
     padding-right: 12%;
-    border-bottom: 2px solid #fff;
+    border-bottom: 5px solid #fff;
 }
 .picture{
-    background-color: blueviolet;
     padding: 0px 0px 0px 12%;  
-    height: 200px;
 }
 .picture img{
-    height: 100%;
-    width: 89%;
     max-width: 200px;
 }
 .stats{
-    background-color: coral;
     width: 100%;
-    height: 140px;
 }
 .stats h2{
     margin: 0 0 0 0;
@@ -625,15 +868,12 @@ footer a{
 .stats hr{
     margin: 0 0 2px 0;
 }
-.afect-ves{
-    height: 66px;
-}
+
 
 
 .container-info{
-    background-color: chartreuse;
     height: 340px;
-    border-bottom: 3px solid #fff;
+    border-bottom: 5px solid #fff;
     padding: 0 2% 0 7%;
 }
 .opis{
@@ -652,9 +892,59 @@ footer a{
     margin: 0 0 2px 0;
 }
 
-@media(min-width: 321px){
-    
+@media(min-width: 426px){
+    .stats h2,
+    .container-info h2{
+        font-size: 24px;
+    }
+    .stats p,
+    .container-info p{
+        font-size: 16px;
+    }
+    .picture img{
+        height: 100%;
+        width: 89%;
+    }
+    .picture{
+        height: 200px;
+    }
+    .stats{
+        height: 140px;
+    }
+    .afect-ves{
+        height: 66px;
+    }
+    .container-info p{
+        line-height: 22px;
+    }
 }
-@media(max-width: 321px){
-    
+@media(max-width: 426px){
+    .stats h2,
+    .container-info h2{
+        font-size: 16px;
+    }
+    .stats p,
+    .container-info p{
+        font-size: 12px;
+    }
+    .taside hr{
+        margin: auto auto 8px auto;
+    }
+    .picture img{
+        height: 70%;
+        width: 90%;
+        margin-top: 18%;
+    }
+    .picture{
+        height: 115px;
+    }
+    .stats{
+        height: 225px;
+    }
+    .afect-ves{
+        height: 112.5px;
+    }
+    .container-info p {
+        line-height: 14px;
+    }
 }
