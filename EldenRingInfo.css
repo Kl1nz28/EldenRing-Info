@@ -26,7 +26,6 @@ header .container{
     width: 90%;
     height: 70px;
     display: flex;
-    justify-content:space-around;
     align-items: center;
     position:fixed;
     top: 0px;
@@ -122,6 +121,9 @@ body._touch .header_menu_list > li._active .menu_arrow {
 }
 /* ------------------------ */
 @media (min-width: 769px) {
+    .container{
+        justify-content: space-between;
+    }
     .header_menu_list{
         display: flex;
         align-items: center;
@@ -150,8 +152,11 @@ body._touch .header_menu_list > li._active .menu_arrow {
         text-decoration: none;
         margin: 0 20px;
     }
-    .poisk{
-        margin-right: 5%;
+    .logo-text{
+        font-size: 30px;
+    }
+    .logo{
+        margin-right: 2%;
     }
     .osnova{
         margin: 48px 0px;
@@ -173,6 +178,9 @@ body._touch .header_menu_list > li._active .menu_arrow {
     }
 }
 @media (max-width: 768px) {
+    .container{
+        justify-content:space-around;
+    }
     .menu_icon{
         z-index: 5;
         display: block;
@@ -180,7 +188,7 @@ body._touch .header_menu_list > li._active .menu_arrow {
         width: 30px;
         height: 18px;
         cursor: pointer;
-        left: 28%;
+        left: 29%;
     }
     .menu_icon span,
     .menu_icon::before,
@@ -280,8 +288,11 @@ body._touch .header_menu_list > li._active .menu_arrow {
         text-decoration: none;
         margin: 0 20px;
     }
-    .poisk{
-        margin-right: 15%;
+    .logo-text{
+        font-size: 30px;
+    }
+    .logo{
+        margin-right: 14%;
     }
     .osnova{
         margin: 48px 0px;
@@ -297,6 +308,9 @@ body._touch .header_menu_list > li._active .menu_arrow {
     }
 }
 @media (max-width: 661px){
+    .container{
+        justify-content: space-around;
+    }
     .menu_icon{
         z-index: 5;
         display: block;
@@ -304,7 +318,7 @@ body._touch .header_menu_list > li._active .menu_arrow {
         width: 30px;
         height: 18px;
         cursor: pointer;
-        left: 40%;
+        left: 43%;
     }
     .menu_icon span,
     .menu_icon::before,
@@ -404,8 +418,11 @@ body._touch .header_menu_list > li._active .menu_arrow {
         text-decoration: none;
         margin: 0 20px;
     }
-    .poisk{
-        margin-right: 20%;
+    .logo{
+        margin-right: 19%;
+    }
+    .logo-text{
+        font-size: 30px;
     }
     .osnova{
         margin: 48px 0px;
@@ -421,6 +438,9 @@ body._touch .header_menu_list > li._active .menu_arrow {
     }
 }
 @media (max-width: 551px){
+    .container{
+        justify-content: space-around;
+    }
     .menu_icon{
         z-index: 5;
         display: block;
@@ -428,7 +448,7 @@ body._touch .header_menu_list > li._active .menu_arrow {
         width: 30px;
         height: 18px;
         cursor: pointer;
-        left: 55%;
+        left: 58%;
     }
     .menu_icon span,
     .menu_icon::before,
@@ -528,7 +548,10 @@ body._touch .header_menu_list > li._active .menu_arrow {
         text-decoration: none;
         margin: 0 20px;
     }
-    .poisk{
+    .logo-text{
+        font-size: 30px;
+    }
+    .logo{
         margin-right: 25%;
     }
     .osnova{
@@ -545,12 +568,17 @@ body._touch .header_menu_list > li._active .menu_arrow {
     }
 }
 @media (max-width: 426px){
-    .menu_icon{
-        left: 58%
+    .container{
+        justify-content: space-around;
     }
-    .poisk{
-        margin-right: 28%;
-        width: 131px;
+    .menu_icon{
+        left: 78%
+    }
+    .logo-text{
+        font-size: 30px;
+    }
+    .logo{
+        margin-right: 31%;
     }
     .osnova{
         margin: 50px 0 0 0;
@@ -580,6 +608,9 @@ body._touch .header_menu_list > li._active .menu_arrow {
     }
 }
 @media (max-width: 376px){
+    .container{
+        justify-content: space-around;
+    }
     .osnova{
         margin: 50px 0 0 0;
     }
@@ -595,11 +626,13 @@ body._touch .header_menu_list > li._active .menu_arrow {
         margin: auto;
     }
     .menu_icon{
-        left: 64%
+        left: 83%
     }
-    .poisk{
+    .logo-text{
+        font-size: 30px;
+    }
+    .logo{
         margin-right: 32%;
-        width: 131px;
     }
     .predlogenia{
         margin-left: 8.5%;
@@ -618,6 +651,9 @@ body._touch .header_menu_list > li._active .menu_arrow {
     }
 }
 @media (max-width: 321px){
+    .container{
+        justify-content: space-around;
+    }
     .osnova{
         margin: 50px 0 0 0;
     }
@@ -633,11 +669,13 @@ body._touch .header_menu_list > li._active .menu_arrow {
         margin: auto;
     }
     .menu_icon{
-        left: 70%
+        left: 83%
     }
-    .poisk{
+    .logo-text{
+        font-size: 24px;
+    }
+    .logo{
         margin-right: 34%;
-        width: 131px;
     }
     .predlogenia{
         margin-left: 8.5%;
@@ -656,17 +694,18 @@ body._touch .header_menu_list > li._active .menu_arrow {
     }
 }
 
-.poisk{
+.logo{
     z-index: 11;
+    display: flex;
+    align-items: center;
 }
-.poisk input{
-    width: 98%;
-    height: 35px;
-    border-radius: 5px;
-    background-color: rgb(56, 52, 48);
-    color: white;
-    font-size: 18px;
+.logo-text{
+    color: rgb(254, 171, 72);
+    font-weight: bold;
+    font-style: italic;
+    font-family: initial;
 }
+
 /* ------------------------ */
 
 
@@ -846,9 +885,6 @@ footer a{
     padding-right: 12%;
     border-bottom: 5px solid #fff;
 }
-.picture{
-    padding: 0px 0px 0px 12%;  
-}
 .picture img{
     max-width: 200px;
 }
@@ -891,8 +927,12 @@ footer a{
 .container-info hr{
     margin: 0 0 2px 0;
 }
-
-@media(min-width: 426px){
+@media (min-width: 1239px){
+    .picture{
+        padding: 0 0 0 23%;
+    }
+}
+@media(max-width: 1239px){
     .stats h2,
     .container-info h2{
         font-size: 24px;
@@ -907,6 +947,7 @@ footer a{
     }
     .picture{
         height: 200px;
+        padding: 0 0 0 12%;
     }
     .stats{
         height: 140px;
@@ -916,6 +957,24 @@ footer a{
     }
     .container-info p{
         line-height: 22px;
+    }
+}
+@media(max-width: 661px){
+    .stats h2,
+    .container-info h2{
+        font-size: 16px;
+    }
+    .stats p,
+    .container-info p{
+        font-size: 12px;
+    }
+    .picture img{
+        height: 100%;
+        width: 89%;
+    }
+    .picture{
+        height: 200px;
+        padding: 0 0 0 12%;
     }
 }
 @media(max-width: 426px){
@@ -937,6 +996,7 @@ footer a{
     }
     .picture{
         height: 115px;
+        padding: 0 0 0 12%;
     }
     .stats{
         height: 225px;
