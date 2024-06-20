@@ -24,7 +24,6 @@ header{
 header .container{
     min-width: 942px;
     width: 90%;
-    height: 70px;
     display: flex;
     align-items: center;
     position:fixed;
@@ -927,12 +926,41 @@ footer a{
 .container-info hr{
     margin: 0 0 2px 0;
 }
-@media (min-width: 1239px){
+@media (min-width: 2559px){
+    .picture{
+        padding: 0 0 0 34%;
+    }
+    .header {
+        height: 95px;
+    }
+    .container{
+        height: 95px;
+    }
+    .header_menu{
+        height: 95px;
+    }
+    .header_menu_list{
+        font-size: 30px;
+    }
+    .logo-text{
+        font-size: 45px;
+    }
+}
+@media (max-width: 2558px){
     .picture{
         padding: 0 0 0 23%;
     }
+    .container{
+        height: 70px;
+    }
+    .logo-text{
+        font-size: 30px;
+    }
 }
 @media(max-width: 1239px){
+    .container{
+        height: 70px;
+    }
     .stats h2,
     .container-info h2{
         font-size: 24px;
@@ -960,6 +988,9 @@ footer a{
     }
 }
 @media(max-width: 661px){
+    .container{
+        height: 70px;
+    }
     .stats h2,
     .container-info h2{
         font-size: 16px;
@@ -978,6 +1009,9 @@ footer a{
     }
 }
 @media(max-width: 426px){
+    .container{
+        height: 70px;
+    }
     .stats h2,
     .container-info h2{
         font-size: 16px;
